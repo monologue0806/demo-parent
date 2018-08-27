@@ -36,7 +36,11 @@
               <artifactId>tomcat7-maven-plugin</artifactId>
               <version>2.2</version>
               <configuration>
-                  <port>80</port>
+                  <!--远程Tomcat的ip地址和端口号，注意远程Tomcat需要启动-->
+                  <url>http://47.93.217.40:8080/manager/text</url>
+                  <username>admin</username>
+                  <password>admin123</password>
+                  <update>true</update>
                   <path>/test01</path>
               </configuration>
           </plugin>
